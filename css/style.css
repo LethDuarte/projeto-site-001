@@ -54,9 +54,18 @@ nav {
     background-color: var(--cor2);
     padding: 15px;
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.315);
+    display: flex;
+    justify-content: space-between;
 }
 
-nav a {
+nav>div.links{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+}
+
+nav>div.links> a {
     font-family: var(--fonte-destaque);
     font-weight: 300;
     font-size: 1.1em;
@@ -69,7 +78,7 @@ nav a {
     transition-duration: .5s;
 }
 
-nav a:hover {
+nav>div.links> a:hover {
     border: 1.1px solid var(--cor3);
     /*background-color: var(--cor3);*/
     color: var(--cor3);
@@ -83,16 +92,16 @@ div.flexbox{
     align-items: center;
 }
 
-.search{
+.pesquisa{
     /*margin: 20px;*/
 }
 
-.search>div{
+.pesquisa>div{
     display: inline-block;
     position: relative;
 }
 
-.search>div::after{
+.pesquisa>div::after{
     content: "";
     background: var(--cor1);
     width: 1.5px;
@@ -103,8 +112,8 @@ div.flexbox{
     transform: rotate(135deg);
 }
 
-.search> div> input{
-    font-family: var(--fonte-padrao);
+.pesquisa> div> input{
+    font-family: var(--fonte-destaque);
     color: black;
     font-size: 16px;
     background: transparent;
@@ -117,18 +126,18 @@ div.flexbox{
     transition: width 0.5s;
 }
 
-.search>div>input::placeholder{
-    font-family: var(--fonte-padrao);
+.pesquisa>div>input::placeholder{
+    font-family: var(--fonte-destaque);
     color: black;
     opacity: 0;
     transition: opacity 150ms ease-out;
 }
 
-.search> div> input:focus::placeholder{
+.pesquisa> div> input:focus::placeholder{
     opacity: 1;
 }
 
-.search>div>input:focus, .search>div>input:not(:placeholder-shown) {
+.pesquisa>div>input:focus, .pesquisa>div>input:not(:placeholder-shown) {
     width: 250px;
 }
 
