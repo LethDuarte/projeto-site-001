@@ -79,7 +79,8 @@ nav>div.links> a {
 }
 
 nav>div.links> a:hover {
-    border: 1.1px solid var(--cor3);
+    border: 1px solid var(--cor3);
+    box-sizing: border-box;
     /*background-color: var(--cor3);*/
     color: var(--cor3);
 }
