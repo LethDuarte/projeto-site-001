@@ -231,6 +231,7 @@ footer {
         text-shadow: none;
         padding-bottom: 10px;
     }
+
     nav {
         display: none;
     }
@@ -243,7 +244,7 @@ footer {
     main h2 {
         color: black;
         font-size: 1.5em;
-        text-align: center;
+        margin: auto;
     }
 
     #quemsomos img {
@@ -251,16 +252,15 @@ footer {
     }
     
     #parceiros {
-        display: flex;
+        text-align: center;
     }
-    
-    
+
+    #parceiros img {
+        width: 125px;
+        height: 125px;
+    }
+        
     #servicos div {
-        width: 25%;    
-    }
-    
-    #servicos div img {
-        width: 100%;
-    }
-    
+        width: 350px;  
+    }    
 }
